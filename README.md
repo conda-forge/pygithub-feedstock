@@ -5,7 +5,7 @@ Home: http://pygithub.github.io/PyGithub/v1/
 
 Package license: GNU Library or Lesser General Public License (LGPL)
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python library implementing the GitHub API v3
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygithub-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pygithub-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygithub-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygithub-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygithub-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygithub-feedstock/branch/master)

@@ -1,17 +1,22 @@
+{% set version = "1.26.0" %}
+
 package:
   name: pygithub
-  version: "1.26.0"
+  version: {{ version }}
 
 source:
-  fn: PyGithub-1.26.0.tar.gz
-  url: https://github.com/PyGithub/PyGithub/archive/v1.26.0.tar.gz
+  fn: PyGithub-{{ version }}.tar.gz
+  url: https://github.com/PyGithub/PyGithub/archive/{{ version }}.tar.gz
   md5: dfaa786c2420d5734d450ec2ecb8c132
+
+build:
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
   build:
     - python
     - setuptools
-
   run:
     - python
 
