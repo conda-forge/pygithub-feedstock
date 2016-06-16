@@ -6,8 +6,8 @@ package:
 
 source:
   fn: PyGithub-{{ version }}.tar.gz
-  url: https://github.com/PyGithub/PyGithub/archive/{{ version }}.tar.gz
-  md5: dfaa786c2420d5734d450ec2ecb8c132
+  url: https://github.com/PyGithub/PyGithub/archive/v{{ version }}.tar.gz
+  sha256: 862f481d5a51825f1f7abc76d3a17e571f378d6b95c629c581f7eccd3ea04200
 
 build:
   number: 0
@@ -27,7 +27,7 @@ test:
 
 about:
   home: http://pygithub.github.io/PyGithub/v1/
-  license: GNU Library or Lesser General Public License (LGPL)
+  license: GPL-3.0
   summary: Python library implementing the GitHub API v3
 
 extra:
