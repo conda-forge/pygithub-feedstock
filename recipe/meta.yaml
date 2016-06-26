@@ -8,9 +8,15 @@ source:
   fn: PyGithub-{{ version }}.tar.gz
   url: https://github.com/PyGithub/PyGithub/archive/v{{ version }}.tar.gz
   sha256: 862f481d5a51825f1f7abc76d3a17e571f378d6b95c629c581f7eccd3ea04200
+  patches:
+    # Adds a patch that provides the ability to create and modify repo content.
+    # Link to the pull request is shown below.
+    #
+    # ( https://github.com/PyGithub/PyGithub/pull/379 )
+    - PR_379.diff
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
