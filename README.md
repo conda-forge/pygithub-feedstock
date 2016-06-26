@@ -3,7 +3,7 @@ About pygithub
 
 Home: http://pygithub.github.io/PyGithub/v1/
 
-Package license: GNU Library or Lesser General Public License (LGPL)
+Package license: GPL-3.0
 
 Feedstock license: BSD 3-Clause
 
