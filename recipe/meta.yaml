@@ -27,7 +27,7 @@ test:
 
 about:
   home: http://pygithub.github.io/PyGithub/v1/
-  license: GPL-3.0
+  license: LGPL-3.0
   summary: Python library implementing the GitHub API v3
 
 extra:
