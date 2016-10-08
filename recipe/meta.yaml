@@ -1,4 +1,4 @@
-{% set version = "1.27.1" %}
+{% set version = "1.28" %}
 
 package:
   name: pygithub
@@ -7,7 +7,7 @@ package:
 source:
   fn: PyGithub-{{ version }}.tar.gz
   url: https://github.com/PyGithub/PyGithub/archive/v{{ version }}.tar.gz
-  sha256: 464a172d547a0429d038a5a75cbdfbcdf99ab756c7742aad875a3db70ccabf3b
+  sha256: 44feab87eefcdf311fe4ad9c356c279b56ba0fc4dd90baeaec1a52e9875cad76
 
 build:
   number: 0
