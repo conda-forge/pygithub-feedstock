@@ -1,12 +1,13 @@
+{% set name = "PyGithub" %}
 {% set version = "1.29" %}
 
 package:
-  name: pygithub
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: PyGithub-{{ version }}.tar.gz
-  url: https://github.com/PyGithub/PyGithub/archive/v{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: bee9760003739bc80d0f970067eb3c6188343bbeed3f497e9adf04d9c703274c
 
 build:
@@ -26,9 +27,13 @@ test:
     - github.tests
 
 about:
-  home: http://pygithub.github.io/PyGithub/v1/
+  home: https://pygithub.github.io/PyGithub/v1/
+  license_file: COPYING.LESSER
   license: LGPL-3.0
-  summary: Python library implementing the GitHub API v3
+  licnense_family: LGPL
+  summary: 'Python library implementing the GitHub API v3'
+  doc_url: https://pygithub.github.io/PyGithub/v1/
+  dev_url: https://github.com/PyGithub/PyGithub
 
 extra:
   recipe-maintainers:
