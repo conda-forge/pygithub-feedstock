@@ -1,7 +1,7 @@
 About pygithub
 ==============
 
-Home: https://pygithub.github.io/PyGithub/v1/
+Home: http://pygithub.github.io/PyGithub/v1/index.html
 
 Package license: LGPL-3.0
 
