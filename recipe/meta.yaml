@@ -1,5 +1,5 @@
 {% set name = "PyGithub" %}
-{% set version = "1.34" %}
+{% set version = "1.37" %}
 
 package:
   name: {{ name|lower }}
@@ -8,16 +8,17 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a9ad589a325b433eb8917d5675d7bafd54266607ffe778e5a3115a1b0caf41b8
+  sha256: 2e3e116a6f7f9986cecc9770be66451ed60015988151186fe97646df7f5e93cb
 
 build:
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     
   run:
     - python
@@ -29,12 +30,12 @@ test:
     - github.tests
 
 about:
-  home: https://pygithub.github.io/PyGithub/v1/
+  home: http://pygithub.github.io/PyGithub/v1/index.html
   license_file: COPYING.LESSER
   license: LGPL-3.0
-  licnense_family: LGPL
+  license_family: LGPL
   summary: 'Python library implementing the GitHub API v3'
-  doc_url: https://pygithub.github.io/PyGithub/v1/
+  doc_url: http://pygithub.github.io/PyGithub/v1/index.html
   dev_url: https://github.com/PyGithub/PyGithub
 
 extra:
