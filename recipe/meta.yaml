@@ -32,7 +32,7 @@ about:
   home: https://pygithub.github.io/PyGithub/v1/
   license_file: COPYING.LESSER
   license: LGPL-3.0
-  licnense_family: LGPL
+  license_family: LGPL
   summary: 'Python library implementing the GitHub API v3'
   doc_url: https://pygithub.github.io/PyGithub/v1/
   dev_url: https://github.com/PyGithub/PyGithub
