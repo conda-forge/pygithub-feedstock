@@ -11,8 +11,8 @@ source:
   sha256: 2e3e116a6f7f9986cecc9770be66451ed60015988151186fe97646df7f5e93cb
 
 build:
+  # Cannot use `noarch: python` as this uses 2to3.
   number: 0
-  noarch: python
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
