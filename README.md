@@ -14,7 +14,9 @@ Summary: Python library implementing the GitHub API v3
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/pygithub-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygithub-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pygithub-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pygithub-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/pygithub-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pygithub-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pygithub-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pygithub-feedstock/branch/master)
 
 Current release info
 ====================
