@@ -11,12 +11,13 @@ source:
   sha256: 8a87bc0fbd0b70c2f12911f7f25a493cd13371bc1bbac6c548cc61b69e7d006f
 
 build:
+  noarch: python
   # Cannot use `noarch: python` as this uses 2to3.
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
     - python
     - pip
     
