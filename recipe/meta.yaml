@@ -1,5 +1,5 @@
 {% set name = "PyGithub" %}
-{% set version = "1.39" %}
+{% set version = "1.43.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a87bc0fbd0b70c2f12911f7f25a493cd13371bc1bbac6c548cc61b69e7d006f
+  sha256: af205fa50d5e18b880c567f77cffbafa23f69988ca8f8f869ad30c535bc7d36f
 
 build:
   # Cannot use `noarch: python` as this uses 2to3.
