@@ -23,6 +23,7 @@ requirements:
   run:
     - python
     - pyjwt
+    - requests
 
 test:
   imports:
