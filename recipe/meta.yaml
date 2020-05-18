@@ -19,17 +19,20 @@ requirements:
   build:
     - python
     - pip
-    
+
   run:
     - python
     - pyjwt
-    - requests
+    - requests >=2.14.0
     - deprecated
 
 test:
+  requires:
+    - pip
   imports:
     - github
-    - github.tests
+  commands:
+    - pip check
 
 about:
   home: http://pygithub.github.io/PyGithub/v1/index.html
