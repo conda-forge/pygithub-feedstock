@@ -19,25 +19,29 @@ requirements:
   build:
     - python
     - pip
-    
+
   run:
     - python
     - pyjwt
-    - requests
+    - requests >=2.14.0
+    - six
     - deprecated
 
 test:
+  requires:
+    - pip
   imports:
     - github
-    - github.tests
+  commands:
+    - pip check
 
 about:
-  home: http://pygithub.github.io/PyGithub/v1/index.html
+  home: http://pygithub.github.io/PyGithub
   license_file: COPYING.LESSER
-  license: LGPL-3.0
+  license: LGPL-3.0-only
   license_family: LGPL
   summary: 'Python library implementing the GitHub API v3'
-  doc_url: http://pygithub.github.io/PyGithub/v1/index.html
+  doc_url: http://pygithub.github.io/PyGithub
   dev_url: https://github.com/PyGithub/PyGithub
 
 extra:
