@@ -5,7 +5,7 @@ Home: http://pygithub.github.io/PyGithub
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Python library implementing the GitHub API v3
 
