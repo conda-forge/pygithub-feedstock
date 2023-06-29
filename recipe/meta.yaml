@@ -1,5 +1,5 @@
 {% set name = "PyGithub" %}
-{% set version = "1.58.0" %}
+{% set version = "1.59.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e325f5ca2c111d19dea2796c8f1e7ae11da77287007736582196341390d31d35
+  sha256: 6e05ff49bac3caa7d1d6177a10c6e55a3e20c85b92424cc198571fd0cf786690
 
 build:
   noarch: python
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.7
     - pip
 
   run:
-    - python >=3
+    - python >=3.7
     - pyjwt >=2.0
     - pynacl >=1.4.0
     - requests >=2.14.0
