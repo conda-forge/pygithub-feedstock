@@ -1,4 +1,4 @@
-{% set name = "PyGithub" %}
+{% set name = "pygithub" %}
 {% set version = "1.59.0" %}
 
 package:
@@ -6,26 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyGithub-{{ version }}.tar.gz
   sha256: 6e05ff49bac3caa7d1d6177a10c6e55a3e20c85b92424cc198571fd0cf786690
 
 build:
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python >=3.7
+    - setuptools-scm
     - pip
-
   run:
     - python >=3.7
-    - pyjwt >=2.0
+    - deprecated
+    - pyjwt >=2.4.0
     - pynacl >=1.4.0
     - requests >=2.14.0
-    - deprecated
 
 test:
   requires:
