@@ -28,7 +28,7 @@ requirements:
     - typing-extensions >=4.0.0
     - urllib3 >=1.26.0
     - deprecated
-    - cryptography>=3.4.0
+    - cryptography >=3.4.0
 
 test:
   requires:
