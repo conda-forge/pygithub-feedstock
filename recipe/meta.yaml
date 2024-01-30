@@ -1,5 +1,5 @@
 {% set name = "pygithub" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyGithub-{{ version }}.tar.gz
-  sha256: ecf12c2809c44147bce63b047b3d2e9dac8a41b63e90fcb263c703f64936b97c
+  sha256: e39be7c4dc39418bdd6e3ecab5931c636170b8b21b4d26f9ecf7e6102a3b51c3
 
 build:
   noarch: python
